@@ -1,0 +1,29 @@
+
+View_Fresh
+
+View_Trending
+
+View_Video
+
+View_Funny
+
+View_Animals       [Procedure_Animals]
+
+
+View_Sports      [Procedure_Sports]   cat_Sports
+
+View_Food    [Procedure_Food]    cat_Food
+
+View_Gif
+
+View_Relationship   [Procedure_Relationship]     cat_Relationship
+
+View_Gaming         [Procedure_Gaming]          cat_Gaming
+
+View_Programmers   [Procedure_Programmers]          cat_Programmers
+
+View_Science     [Procedure_Science]           cat_Science
+
+View_Comic       [Procedure_Comic]          cat_Comic
+
+View_School   [Procedure_School]         cat_School

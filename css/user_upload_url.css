@@ -1,0 +1,45 @@
+﻿
+#back_user_upload_url {
+    background-image: url('../image/back.png');
+    z-index: 7;
+    background-color: rgba(51, 51, 51, 0.84);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+    visibility: visible;
+}
+
+    #back_user_upload_url .user_upload_url .heading h3 {
+        font-size: 30px;
+        font-weight: 700;
+    }
+
+    #back_user_upload_url .user_upload_url .spacer .input_url {
+        width: 100%;
+        padding: 5px;
+        padding-left: 10px;
+        height: 50px;
+        font-size: 15px;
+        border: 1px solid #bbb9b9;
+    }
+
+        #back_user_upload_url .user_upload_url .spacer .input_url:focus {
+            outline: none;
+        }
+
+    #back_user_upload_url .user_upload_url .spacer .btn-container {
+        float: right;
+        padding-right: 10px;
+    }
+
+    #back_user_upload_url .user_upload_url .spacer button {
+        width: 70px;
+    }
+
+        #back_user_upload_url .user_upload_url .spacer button:focus {
+            outline: none;
+        }

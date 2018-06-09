@@ -1,0 +1,1 @@
+﻿INSERT INTO sidebar (s_id,s_title,s_link,s_img)VALUES ('s_1','','https://www.flipkart.com/','http://indianonlineseller.com/wp-content/uploads/2016/10/fk-ad.jpg');

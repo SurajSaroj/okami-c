@@ -1,0 +1,85 @@
+﻿
+#back_user_upload {
+    background-image: url('../image/back.png');
+    z-index: 7;
+    background-color: rgba(51, 51, 51, 0.84);
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    visibility: hidden;
+    top: 0px;
+    left: 0px;
+    overflow: scroll;
+    visibility: visible;
+}
+
+
+#back_user_upload .user_upload .heading h3 {
+    font-size: 30px;
+    font-weight: 700;
+}
+
+#back_user_upload .user_upload .spacer .post_upload_button {
+    border: 1px solid #cecccc;
+    border-radius: 5px;
+    text-align: center;
+    padding: 20px;
+}
+
+#back_user_upload .spacer .post_upload_button .btn {
+    display: block;
+    background: #439be8;
+    width: 100px;
+    color: white;
+    margin-left: 150px;
+    text-align: center;
+    margin-top: 20px;
+}
+
+#back_user_upload .spacer .post_upload_button .glyphicon {
+    display: none;
+}
+
+#back_user_upload .upload_post_combine {
+    margin-top: 20px;
+    display: block;
+}
+
+    #back_user_upload .upload_post_combine a {
+        color: black;
+    }
+
+    #back_user_upload .upload_post_combine .make_meam img {
+        width: 60px;
+        height: auto;
+        margin-bottom: 24px;
+        margin-top: 23px;
+    }
+
+    #back_user_upload .user_upload .spacer .post_upload_button:hover,
+    #back_user_upload .upload_post_combine .paste_image_url:hover,
+    #back_user_upload .upload_post_combine .make_meam:hover,
+    #back_user_upload .upload_post_combine .paste_video_url:hover {
+        background-color: #f9f9f9;
+    }
+
+    #back_user_upload .upload_post_combine .paste_image_url,
+    #back_user_upload .upload_post_combine .make_meam,
+    #back_user_upload .upload_post_combine .paste_video_url {
+        width: 31.68%;
+        display: inline-block;
+        border: 1px solid #cecccc;
+        border-radius: 5px;
+        text-align: center;
+        cursor: pointer;
+    }
+
+    #back_user_upload .upload_post_combine .paste_video_url {
+        margin: 0px 7px;
+    }
+
+        #back_user_upload .upload_post_combine .paste_image_url i,
+        #back_user_upload .upload_post_combine .make_meam i,
+        #back_user_upload .upload_post_combine .paste_video_url i {
+            padding: 20px;
+        }

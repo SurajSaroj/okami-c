@@ -1,0 +1,441 @@
+﻿
+
+/* --------------------------------- snack bar or pop up info --------------------------------------------------------*/
+#snackbar {
+    z-index:999;
+    display: none;
+    visibility: hidden;
+    min-width: 200px;
+    margin-left: -125px;
+    color: #fff;
+    text-align: center;
+    border-radius: 2px;
+    padding: 16px;
+    position: fixed;
+    left: 50%;
+    top: 40px;
+    font-size: 17px;
+}
+
+    #snackbar #snackbar_label {
+        margin-bottom: 0px;
+        font-weight: 100;
+    }
+
+    #snackbar.show_info {
+        background-color: #49d86e;
+        visibility: visible;
+    }
+
+    #snackbar.show_warning {
+        background-color: #e86d69 !important;
+        visibility: visible;
+    }
+
+/* --------------------------------------------------------------------------------------------------------------------------*/
+
+
+#-error {
+    color: rgba(255, 7, 7, 0.76);
+}
+
+body {
+    background-color: rgb(211, 212, 212);
+    display: none;
+    min-width: 583px;
+}
+
+
+    .navbar-inverse {
+    display: block;
+}
+
+.navbar-toggle {
+    border-color: #ddd;
+    position: relative;
+    float: right;
+    padding: 9px 10px;
+    margin-top: 10px;
+    margin-right: 15px;
+    margin-bottom: 8px;
+    background-color: rgba(249, 249, 249, 0.97);
+    background-image: none;
+    border: 1px solid rgba(0, 0, 0, 0.36);
+    border-radius: 4px;
+    z-index: 6;
+}
+
+.sr-only {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    padding: 0;
+    margin: -1px;
+    overflow: hidden;
+    clip: rect(0, 0, 0, 0);
+    border: 0;
+}
+
+.navbar-toggle .icon-bar {
+    display: block;
+    width: 22px;
+    height: 2px;
+    border-radius: 1px;
+}
+
+.navbar-toggle .icon-bar {
+    background-color: #888;
+}
+
+.navbar-toggle:hover > .icon-bar {
+    background-color: #171717;
+}
+
+
+
+.line {
+    display: block;
+    background-color: #0991b1;
+    height: 2px;
+    margin-top: 5px;
+    margin-bottom: -1px;
+}
+
+.container .name1 {
+    font-size: 55px;
+    font-family: inherit;
+    letter-spacing: 12px;
+    font-weight: 800;
+}
+
+.mi_col {
+    color: #0894b5;
+}
+
+.name {
+    display: inline;
+    float: left;
+}
+
+    .name h1 {
+        margin-top: 2px;
+        margin-bottom:2px;
+    }
+
+.search_bar {
+    float: right;
+    margin-top: 7px;
+    display: inline;
+}
+
+.container-fluid {
+    padding-right: 100px;
+    padding-left: 50px;
+}
+
+.input-group {
+    width: 300px;
+}
+
+    .input-group .form-control:focus{
+        outline:none;
+    }
+    
+    
+    .navbar-nav li {
+        text-align: center;
+        width: 220px;
+    }
+
+.navbar-right li {
+    width: auto;
+}
+
+.navbar-inverse .navbar-nav > .active > a, .navbar-inverse .navbar-nav > .active > a:hover {
+    background-color: rgb(56, 56, 56);
+}
+
+
+
+
+@media screen and (max-width: 767px) {
+
+    .navbar-inverse .navbar-nav > .active > a,
+    .navbar-inverse .navbar-nav > .active > a:hover {
+        background-color: #222222;
+    }
+
+    .navbar-form {
+        margin-top: 0px;
+    }
+    .navbar-inverse {
+        display: none;
+        top: 0px;
+        left: 0px;
+        position: fixed;
+        width: 100%;
+        height: 100%;
+        z-index: 5;
+    }
+
+        .navbar-inverse .navbar-nav > li > a:hover {
+            color: #0894b5;
+        }
+}
+
+
+
+
+/*-------------- styling for main container ie body and list-box   -------------*/
+.pull-left {
+    margin-bottom: 20px;
+    z-index: 6;
+}
+
+.list-box {
+    margin-bottom: auto;
+}
+
+    .list-box h2 {
+        cursor: default;
+        display: block;
+        background-color: rgba(56, 56, 56, 0.95);
+        border: 1px solid #000000;
+        border-radius: 3px 3px 0 0;
+        font: 17px "Oswald Regular",sans-serif;
+        color: #fff;
+        line-height: 35px;
+        position: relative;
+        text-align: center;
+        text-shadow: 0 0 20px #000000;
+        text-transform: uppercase;
+        margin: 0;
+        padding: 0;
+    }
+
+    .list-box ul {
+        padding: 0;
+        margin: 0;
+        min-width: 230px;
+        display: block;
+        list-style: none;
+        border-radius: 0 0 4px 4px;
+        background-color: #ffffff;
+    }
+
+    .list-box li {
+        background-color: #ececec;
+        padding-left: 0 !important;
+        border-bottom: 1px solid #cdcdcd;
+        position: relative;
+    }
+
+        .list-box li a {
+            color: #000;
+            text-align: start;
+            display: block;
+            font-size: 14px;
+            line-height: 38px;
+            padding: 0 12px 0 49px;
+            position: relative;
+            text-decoration: none;
+        }
+
+            .list-box li a:hover {
+                font-weight: bold;
+            }
+
+    .list-box i.flaticon-trending,
+    .list-box i.flaticon-movie-library,
+    .lis
+    t-box i.flaticon-tv-library {
+        color: #89ad19;
+    }
+
+    .list-box i {
+        height: 30px;
+        left: 12px;
+        margin-right: 7px;
+        position: absolute;
+        top: 0;
+        width: 30px;
+        color: #f1430a;
+        font-size: 23px;
+    }
+
+.drop_down_button {
+    border: none;
+    width: 40px;
+    height: 35px;
+    background-color: rgba(0, 100, 0, 0);
+    float: right;
+    margin-right: 5px;
+    color: black;
+    display: none;
+}
+
+    .drop_down_button:focus {
+        outline: none;
+    }
+
+
+.list-box .drop_down_button img {
+    width: 10px;
+    height: 10px;
+}
+
+.drop_down_ul i {
+    margin-top: 10px;
+}
+
+.page-content {
+    display: block;
+    margin-left: 320px;
+    width: 550px;
+    padding: 1px;
+    // background-color:#ececec;
+}
+
+.content_post {
+    box-shadow: rgba(0, 0, 0, 0.3) 7px 7px 7px;
+    display: inline-block;
+    width: auto;
+    border-radius: 5px;
+    border: 1px solid #acadad;
+    height: auto;
+    padding: 14px;
+    background-color: rgba(249, 249, 249, 0.97);
+    margin-bottom: 20px;
+}
+
+.page-content .content_heading a {
+    text-decoration: none;
+}
+
+    .page-content .content_heading a:hover {
+        text-decoration: none;
+    }
+
+.page-content .content_heading {
+    display: block;
+}
+
+    .page-content .content_heading h2 {
+        margin-top: 0px;
+        color: black;
+    }
+
+        .page-content .content_heading h2:hover {
+            margin-top: 0px;
+            color: #0894b5;
+        }
+
+.content-img {
+    width: 490px;
+    height: auto;
+}
+
+    .content-img img {
+        width: 490px;
+        height: auto;
+        border: 1px solid rgba(193, 192, 192, 0.42);
+    }
+
+.content_view_likes {
+    padding: 5px;
+    float: right;
+}
+
+    .content_view_likes .post_likes_count, .content_view_likes .post_comment_count,
+    .content_view_likes .post_flag_count {
+        color: #6b6a6a;
+        margin-left: 10px;
+        cursor: default;
+    }
+
+.content_likes_comm_btn {
+    margin-top: 10px;
+    text-align: left;
+}
+
+    .content_likes_comm_btn span button {
+        color: #000000;
+        padding-top: 5px;
+        padding-bottom: 5px;
+        padding-left: 10px;
+        padding-right: 10px;
+        margin-right: 10px;
+        background-color: rgba(16, 16, 16, 0);
+        border: 1px solid rgba(128, 128, 128, 0.47);
+        border-radius: 5px;
+    }
+
+        .content_likes_comm_btn span button:focus {
+            outline: none;
+        }
+
+        .content_likes_comm_btn span button:hover > .fa {
+            color: #0894b5;
+        }
+
+.move_top {
+    position: fixed;
+    padding: 7px 10px 7px 10px;
+    right: 22px;
+    bottom: 20px;
+    border-radius: 50px;
+    border: 1px solid rgba(70, 68, 68, 0.86);
+    background-color: rgba(255, 255, 255, 0);
+    display: none;
+}
+
+    .move_top:hover {
+        cursor: pointer;
+    }
+
+    .move_top i {
+        color: #000000;
+        font-size: 30px;
+    }
+
+
+
+@media (max-width: 767px) {
+
+    .page-content {
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        margin-left: 0px;
+        padding-left: 15px;
+        padding-right: 15px;
+    }
+
+    .pull-left {
+        margin-top:10px;
+        z-index: 6;
+        padding-left: 15px;
+        padding-right: 15px;
+        width: 100%;
+    }
+
+    .list-box .drop_down_button {
+        display: block;
+    }
+
+    .list-box h2 {
+        text-align: left;
+        padding-left: 30px;
+    }
+
+    .list-box ul {
+        display: none;
+    }
+
+    .content_likes_comm_btn, .page-content .content_heading h2 {
+        text-align: left;
+    }
+}
+
+/* -------------------------- ---------- advertisement / sidebar -----------------------------------------*/
+/*----------------------------------------------------------------------------------------------------------------------------------*/
